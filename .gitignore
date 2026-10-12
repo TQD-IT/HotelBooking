@@ -1,33 +1,29 @@
-# Visual Studio / Rider / VS Code
+# Visual Studio
 .vs/
-.idea/
-.vscode/
-*.user
 *.suo
+*.user
 *.userosscache
 *.sln.docstates
 
-# Compiled .NET build output
-[Bb]in/
-[Oo]bj/
+# Build
+**/bin/
+**/obj/
 [Dd]ebug/
 [Rr]elease/
-[Tt]est[Rr]esults/
-*.pdb
 
-# Temporary and system files
-*.tmp
-*.bak
+# NuGet
+packages/
+*.nupkg
+
+# Local configuration and secrets
+**/appsettings.Local.json
+**/appsettings.*.local.json
+*.pfx
+*.publishsettings
+
+# SQL Server database files
+*.mdf
+*.ldf
+
+# Logs
 *.log
-.DS_Store
-Thumbs.db
-
-# Local secrets & runtime-generated files
-.env
-.env.*
-!*.env.example
-appsettings.Local.json
-appsettings.*.local.json
-secrets.json
-*.db-wal
-*.db-shm
